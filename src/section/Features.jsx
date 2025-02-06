@@ -32,7 +32,8 @@ export default function Features() {
     ];
 
     return (
-        <section className="py-16 px-6 bg-white flex flex-col items-center text-center">
+        <section className="features py-[80px] px-[120px] bg-white flex flex-col items-center text-center">
+            <div className="container max-w-[1200px] flex flex-col items-center">
             <div className="headline flex flex-col items-center w-full max-w-[479px]">
                 <span className="mb-[16px] inline-block rounded-full bg-indigo-100 px-[16px] py-[8px] text-sm font-normal text-primary-500">
                     FEATURES
@@ -43,7 +44,7 @@ export default function Features() {
                 </p>
             </div>
 
-            <div className="mt-[56px] grid grid-cols-1 md:grid-cols-2 gap-[32px] max-w-5xl mx-auto">
+            <div className="mt-[56px] grid grid-cols-1 md:grid-cols-2 gap-[32px] mx-auto">
                 {features.map((feature, index) => (
                     <FeatureCard key={index} feature={feature} />
                 ))}
@@ -60,6 +61,7 @@ export default function Features() {
             >
                 {showMore ? "See Less" : "See More Features"}
             </button>
+            </div>
         </section>
     );
 }

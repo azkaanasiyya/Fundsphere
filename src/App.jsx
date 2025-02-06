@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import Hero from "./section/Hero"
 import Ads from "./section/Ads"
 import Features from "./section/Features"
+import Plans from "./section/Plans"
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
     < Hero />
     < Ads />
     < Features />
+    < Plans />
     {/* < Footer />    */}
     </div>
   )
