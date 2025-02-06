@@ -1,6 +1,7 @@
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
-import HomePage from "./pages/HomePage"
+import Hero from "./section/Hero"
+import Ads from "./section/Ads"
 
 function App() {
   
@@ -8,7 +9,8 @@ function App() {
   return (
     <div >
     < Navbar />
-    < HomePage />
+    < Hero />
+    < Ads />
     {/* < Footer />    */}
     </div>
   )
