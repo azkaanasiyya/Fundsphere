@@ -32,7 +32,7 @@ export default function Features() {
     ];
 
     return (
-        <section className="features py-[80px] px-[120px] bg-white flex flex-col items-center text-center">
+        <section className="features-section py-[80px] px-[120px] bg-white flex flex-col items-center text-center">
             <div className="container max-w-[1200px] flex flex-col items-center">
             <div className="headline flex flex-col items-center w-full max-w-[479px]">
                 <span className="mb-[16px] inline-block rounded-full bg-indigo-100 px-[16px] py-[8px] text-sm font-normal text-primary-500">

@@ -4,6 +4,7 @@ import Hero from "./section/Hero"
 import Ads from "./section/Ads"
 import Features from "./section/Features"
 import Plans from "./section/Plans"
+import Insight from "./section/Insight"
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
     < Ads />
     < Features />
     < Plans />
+    < Insight />
     {/* < Footer />    */}
     </div>
   )

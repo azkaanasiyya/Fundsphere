@@ -6,7 +6,7 @@ import pattern from "../assets/pattern.svg";
 
 function Ads() {
   return (
-    <div className="bg-additional-navy flex items-center justify-center" style={{backgroundImage: `url(${pattern})`}}>
+    <div className="ads-section bg-additional-navy flex items-center justify-center" style={{backgroundImage: `url(${pattern})`}}>
         <div className="container max-w-[720.46px] py-[56px]">
             <div className="ads-image flex items-center justify-center gap-[48px]">
                 <img src={uber} alt="uber" />

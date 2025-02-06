@@ -2,7 +2,7 @@ import heroImage from '../assets/hero.svg';
 
 function Hero() {
   return (
-    <div className="home-page">
+    <div className="hero-section">
       <div className="container max-w-[1200px] ">
         <div className="hero flex flex-row items-center justify-between">
           <div className="hero-image pb-[104px] pt-52">
