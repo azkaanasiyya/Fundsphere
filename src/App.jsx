@@ -5,6 +5,7 @@ import Ads from "./section/Ads"
 import Features from "./section/Features"
 import Plans from "./section/Plans"
 import Insight from "./section/Insight"
+import Testimony from "./section/Testimony"
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
     < Features />
     < Plans />
     < Insight />
+    < Testimony />
     {/* < Footer />    */}
     </div>
   )

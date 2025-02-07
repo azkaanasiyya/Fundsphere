@@ -14,11 +14,10 @@ const articles = [
 ];
 
 export default function Insight() {
-    const [visibleCount, setVisibleCount] = useState(3);
-    const isExpanded = visibleCount === articles.length;
-  
+    const [showAll, setShowAll] = useState(false); 
+
     return (
-      <div className="insight-section py-[120px] px-[119px] bg-neutral-50 min-h-screen" style={{backgroundImage: `url(${pattern})`}}>
+      <div className="insight-section py-[120px] px-[119px] bg-neutral-50 min-h-screen" style={{ backgroundImage: `url(${pattern})` }}>
         <div className="container max-w-[1201px] flex flex-col gap-[72px] items-center">
             <div className="headline flex flex-col items-center gap-[16px]">
                 <span className="mb-[16px] inline-block rounded-full bg-indigo-100 px-[16px] py-[8px] text-sm font-normal text-primary-500">
@@ -30,27 +29,27 @@ export default function Insight() {
                 </p>
             </div>
             
-        
             <div className="grid md:grid-cols-3 gap-[32px]">
-            {articles.slice(0, visibleCount).map((article, index) => (
-                <div key={index} className="bg-white rounded-xl flex flex-col items-center">
-                    <img src={article.image} alt={article.title} className="w-[379px] h-[342px] object-cover mb-4 rounded-t-xl" />
-                    <div className="">
-                        <div className="p-6 w-full flex flex-col text-left bg-white rounded-xl">
-                            <h3 className="text-neutral-500 text-xl font-semibold mb-7">{article.title}</h3>
+                {articles.slice(0, showAll ? articles.length : 3).map((article, index) => (
+                    <div key={index} className="flex flex-col gap-4 items-center">
+                        <div className="bg-white rounded-[14px] shadow-lg overflow-hidden">
+                            <img src={article.image} alt={article.title} className="w-[379px] h-[342px] object-cover rounded-xl" />
+                        </div>
+
+                        <div className="bg-white rounded-[12px] py-[8px] px-[24px] text-left flex flex-col justify-between">
+                            <h3 className="text-neutral-500 text-xl font-medium mb-4">{article.title}</h3>
                             <p className="text-neutral-300 text-base">{article.date}</p>
                         </div>
                     </div>
-                    
-                </div>
-            ))}
+                ))}
             </div>
-        
+
+
             <button 
-            onClick={() => setVisibleCount(isExpanded ? 3 : articles.length)}
-            className="px-[32px] py-[8px] h-[56px] bg-primary-500 text-white rounded-full font-medium hover:bg-primary-400 transition"
+                onClick={() => setShowAll(!showAll)}
+                className="px-[32px] py-[8px] h-[56px] bg-primary-500 text-white rounded-full font-medium hover:bg-primary-400 transition"
             >
-            {isExpanded ? "See Less Article" : "Read More Article"}
+                {showAll ? "See Less Article" : "Read More Article"}
             </button>
         </div>
       </div>
