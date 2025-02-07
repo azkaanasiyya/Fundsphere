@@ -10,7 +10,7 @@ function Hero() {
           </div>
           <div className="hero-content flex w-[482px] flex-col gap-[16px] bg-white px-4 py-12">
             <section className="flex h-full flex-col">
-              <div className="mx-auto ml-[73.92px] flex h-full max-w-full flex-col gap-[32px]">
+              <div className="mx-auto ml-[73.92px] flex h-full max-w-full flex-col gap-[64px]">
                 <div className="w-full flex-grow">
                   <span className="mb-[32px] inline-block rounded-full bg-indigo-100 px-[16px] py-[8px] text-sm font-normal text-primary-500">
                     BEST CHOICE
@@ -22,33 +22,30 @@ function Hero() {
                   <p className="mb-[32px] text-base text-neutral-300 sm:text-lg">
                     Scale with checking and savings accounts, custom tools, and access to our investor network.
                   </p>
-                  <div className="flex w-full max-w-md items-center rounded-full border border-gray-300 px-4 py-2">
+                  <div className="relative w-full max-w-md">
                     <input
                       type="email"
                       placeholder="Your work email"
                       className="
-                        flex-1
-                        border-none
-                        placeholder:text-gray-500
-                        text-base
+                        w-full rounded-full border border-neutral-100 px-4 py-[4px] 
+                        pr-[4px] pl-[32px] h-[64px] bg-white placeholder-neutral-300 text-base 
+                        focus:outline-none
                       "
                     />
                     <button
                       className="
-                        ml-2
-                        rounded-full
-                        bg-primary-500
-                        px-6
-                        py-2
-                        text-base
-                        text-white
-                        hover:bg-primary-400
-                        transition-colors
+                        absolute right-1 top-1 bottom-1
+                        flex items-center justify-center
+                        px-[32px] py-[8px] h-[56px]
+                        w-[153px] rounded-full
+                        bg-primary-500 text-white text-base font-medium
+                        hover:bg-primary-400 transition-all
                       "
                     >
                       Get Started
                     </button>
                   </div>
+
                 </div>
                 <div className="flex w-full justify-center">
                   <div className="grid grid-cols-3 gap-6">

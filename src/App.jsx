@@ -1,4 +1,4 @@
-import Footer from "./components/Footer"
+
 import Navbar from "./components/Navbar"
 import Hero from "./section/Hero"
 import Ads from "./section/Ads"
@@ -6,6 +6,8 @@ import Features from "./section/Features"
 import Plans from "./section/Plans"
 import Insight from "./section/Insight"
 import Testimony from "./section/Testimony"
+import CTA from "./section/CTA"
+import Footer from "./components/Footer"
 
 function App() {
   
@@ -19,7 +21,8 @@ function App() {
     < Plans />
     < Insight />
     < Testimony />
-    {/* < Footer />    */}
+    < CTA />
+    < Footer />   
     </div>
   )
 }
