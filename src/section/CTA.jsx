@@ -2,7 +2,7 @@ import pattern from "../assets/patternCTA.svg";
 
 export default function CTA() {
     return (
-      <section className="container relative z-10 max-w-[1200px] bg-primary-500 text-white text-center py-[48px] px-[120px] rounded-[24px] mx-auto shadow-lg -mb-32" style={{backgroundImage: `url(${pattern})`}}>
+      <section className="container relative z-10 max-w-[1200px] bg-primary-500 text-white text-center py-[48px] px-[120px] rounded-[24px] mx-auto shadow-lg -mb-32" id="cta" style={{backgroundImage: `url(${pattern})`}}>
         <div className="w-[504px] mx-auto flex flex-col items-center gap-[24px]">
           <h1 className="text-4xl md:text-5xl tracking-wide font-bold mb-4">
             Get started today for better future finance

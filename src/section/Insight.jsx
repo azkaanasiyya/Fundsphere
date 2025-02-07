@@ -17,7 +17,7 @@ export default function Insight() {
     const [showAll, setShowAll] = useState(false); 
 
     return (
-      <div className="insight-section py-[120px] px-[119px] bg-neutral-50 min-h-screen" style={{ backgroundImage: `url(${pattern})` }}>
+      <div id="insight" className="insight-section py-[120px] px-[119px] bg-neutral-50 min-h-screen" style={{ backgroundImage: `url(${pattern})` }}>
         <div className="container max-w-[1201px] flex flex-col gap-[72px] items-center">
             <div className="headline flex flex-col items-center gap-[16px]">
                 <span className="mb-[16px] inline-block rounded-full bg-indigo-100 px-[16px] py-[8px] text-sm font-normal text-primary-500">

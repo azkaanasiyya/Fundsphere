@@ -1,27 +1,39 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
 function Navbar() {
     const [active, setActive] = useState(false);
     const [scroll, setScroll] = useState(false);
 
     const handleClick = () => {
-        setActive(!active)
-    }
+        setActive(!active);
+    };
 
     let menuActive = active ? "left-0" : "-left-full";
 
     useEffect(() => {
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 5) {
-                    setScroll(true)
-                    setActive(false)
+        const handleScroll = () => {
+            if (window.scrollY > 5) {
+                setScroll(true);
+                setActive(false);
             } else {
-                setScroll(false)
+                setScroll(false);
             }
-    });
-    });
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     let scrollActive = scroll ? "bg-white shadow" : "py-0";
+
+    const handleSmoothScroll = (e, targetId) => {
+        e.preventDefault(); 
+        const target = document.querySelector(targetId);
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            setActive(false); 
+        }
+    };
 
     return (
         <div className={`navbar fixed w-full transition-all ${scrollActive}`}>
@@ -29,20 +41,22 @@ function Navbar() {
                 <div className="navbar-wrapper flex justify-between items-center">
                     <div className="navbar-block flex justify-between items-center gap-[7.5rem]">
                         <div className="logo flex items-center space-x-4">
-                            <img src="logoNavbar.svg" alt="logo" />
+                            <a href="#hero" onClick={(e) => handleSmoothScroll(e, "#hero")}>
+                                <img src="logoNavbar.svg" alt="logo" />
+                            </a>
                         </div>
                         <ul className={`flex gap-[52px] text-base font-medium text-neutral-500 fixed lg:static 2lg:bg-transparent 2lg:w-auto 2lg:h-full 2lg:translate-y-0 2lg:flex-row 2lg:shadow-none 2lg:p-0 2lg:m-0 2lg:transition-none ${menuActive} top-1/2 -translate-y-1/2 flex-col px-8 py-6 rounded shadow-lg shadow-slate-300 bg-primary-300 transition-all`}>
-                            <li className="">
-                                <a href="#">Features</a>
+                            <li>
+                                <a href="#features" onClick={(e) => handleSmoothScroll(e, "#features")}>Features</a>
                             </li>
                             <li>
-                                <a href="#">Pricing</a>
+                                <a href="#plans" onClick={(e) => handleSmoothScroll(e, "#plans")}>Pricing</a>
                             </li>
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="#testimony" onClick={(e) => handleSmoothScroll(e, "#testimony")}>About Us</a>
                             </li>
                             <li>
-                                <a href="#">Blog</a>
+                                <a href="#insight" onClick={(e) => handleSmoothScroll(e, "#insight")}>Blog</a>
                             </li>
                         </ul>
                     </div>
@@ -60,7 +74,7 @@ function Navbar() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;

@@ -38,7 +38,7 @@ export default function Testimony() {
     const [showAll, setShowAll] = useState(false);
 
     return (
-        <div className="testimonial-section pt-[64px] pb-[104px] px-[120px] min-h-screen">
+        <div id="testimony" className="testimonial-section pt-[64px] pb-[104px] px-[120px] min-h-screen">
             <div className="container max-w-[1200px] flex flex-col items-center gap-[56px]">
                 <div className="headline-wrapper flex flex-col items-center gap-[24px]">
                     <div className="headline w-[370px] flex flex-col items-center gap-[16px]">
