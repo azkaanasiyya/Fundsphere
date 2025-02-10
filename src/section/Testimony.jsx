@@ -38,11 +38,11 @@ export default function Testimony() {
     const [showAll, setShowAll] = useState(false);
 
     return (
-        <div id="testimony" className="testimonial-section pt-[64px] pb-[104px] px-[120px] min-h-screen">
+        <div id="testimony" className="testimonial-section pt-[64px] pb-[104px] px-[120px] flex flex-col items-center min-h-screen">
             <div className="container max-w-[1200px] flex flex-col items-center gap-[56px]">
                 <div className="headline-wrapper flex flex-col items-center gap-[24px]">
                     <div className="headline w-[370px] flex flex-col items-center gap-[16px]">
-                        <span className="mb-[16px] inline-block rounded-full bg-indigo-100 px-[16px] py-[8px] text-sm font-normal text-primary-500">
+                        <span className="mb-[16px] inline-block rounded-full bg-additional-purple px-[16px] py-[8px] text-sm font-normal text-primary-500">
                             TESTIMONY
                         </span>
                         <h2 className="text-5xl font-bold tracking-wide">What others are saying about Us</h2>
@@ -59,7 +59,7 @@ export default function Testimony() {
                         <p className="text-lg font-normal text-neutral-300">REVIEW FROM TRUSTPILOT</p>
                     </div>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 mx-auto gap-[32px]">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[32px]">
                         {testimonials.slice(0, showAll ? testimonials.length : 2).map((testimonial, index) => (
                             <div key={index} className="bg-neutral-50 rounded-[24px] py-[32px] px-[40px] flex flex-col gap-[32px]">
                                 <img src={testimonial.image} alt={testimonial.name} className="w-[504px] h-[320px]" />

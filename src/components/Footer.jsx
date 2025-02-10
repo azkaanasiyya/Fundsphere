@@ -46,9 +46,9 @@ export default function Footer() {
 
       </div>
 
-      <div className="w-[1200px] border-t border-neutral-300 mb-[32px]"></div>
+      <div className="w-full max-w-[1200px] border-t border-neutral-300 mb-[32px]"></div>
 
-      <div className="w-[1200px] flex flex-row justify-between items-center">
+      <div className="w-full max-w-[1200px] flex flex-row justify-between items-center">
         <p className="text-primary-400 text-sm">© Fundsphere Copyright 2024. All Rights Reserved.</p>
         <img src={socmed} alt="socmed" />
       </div>

@@ -14,13 +14,13 @@ const pricingPlans = {
 };
 
 export default function Plans() {
-    const [billingCycle, setBillingCycle] = useState("yearly");
+    const [billingCycle, setBillingCycle] = useState("monthly");
 
     return (
       <div id="plans" className="plans-section py-[80px] px-[120px] bg-white flex flex-col items-center text-center">
         <div className="container max-w-[1200px] flex flex-col items-center">
           <div className="headline">
-            <span className="mb-[16px] inline-block rounded-full bg-indigo-100 px-[16px] py-[8px] text-sm font-normal text-primary-500">
+            <span className="mb-[16px] inline-block rounded-full bg-additional-purple px-[16px] py-[8px] text-sm font-normal text-primary-500">
               PRICING PLAN
             </span>
             <h1 className="text-[48px] font-bold mb-[16px] text-neutral-500">Choose Package</h1>
@@ -37,7 +37,7 @@ export default function Plans() {
           <span className={billingCycle === "yearly" ? "text-base text-primary-500" : "text-neutral-200"}>Yearly</span>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-[32px]">
+        <div className="grid lg:grid-cols-3 gap-[32px]">
           {pricingPlans[billingCycle].map((plan, index) => (
             <div key={index} className={`py-[32px] px-[40px] rounded-[24px] flex flex-col border border-primary-500 justify-between gap-[40px] ${plan.name === "Pro" ? "bg-neutral-500 text-white" : "bg-neutral-50 text-neutral-500"}`}>
               <div className="pricing-desc">

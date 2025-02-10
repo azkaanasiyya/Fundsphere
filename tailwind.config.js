@@ -43,6 +43,7 @@ export default {
         additional: {
           white: "#FFFFFF",
           navy: "#0F2060",
+          purple: "rgba(99, 91, 255, 0.1)",
         }
       },
       fontSize: {}

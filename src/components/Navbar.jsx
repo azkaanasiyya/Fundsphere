@@ -36,7 +36,7 @@ function Navbar() {
     };
 
     return (
-        <div className={`navbar fixed w-full transition-all ${scrollActive}`}>
+        <div className={`navbar sticky z-[9999] top-0 w-full transition-all ${scrollActive}`}>
             <div className="container mx-auto px-8 py-8">
                 <div className="navbar-wrapper flex justify-between items-center">
                     <div className="navbar-block flex justify-between items-center gap-[7.5rem]">
