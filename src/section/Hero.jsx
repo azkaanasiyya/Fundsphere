@@ -51,7 +51,7 @@ function Hero() {
             </div>
             <div className="text-center">
               <h2 className="text-[32px] lg:text-5xl font-bold text-primary-500">40+</h2>
-              <p className="mt-1 text-sm lg:text-base text-neutral-200">Country Available</p>
+              <p className="mt-1 text-sm lg:text-base text-neutral-200">Country <br /> Available</p>
             </div>
           </div>
         </div>
