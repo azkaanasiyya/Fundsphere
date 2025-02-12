@@ -37,10 +37,10 @@ function Navbar() {
 
     return (
         <div className={`navbar sticky z-[9999] top-0 w-full transition-all ${scrollActive}`}>
-            <div className="container mx-auto px-8 py-8">
+            <div className="container mx-auto px-5 py-6 lg:px-8 lg:py-8">
                 <div className="navbar-wrapper flex justify-between items-center">
                     <div className="navbar-block flex justify-between items-center gap-[7.5rem]">
-                        <div className="logo flex items-center space-x-4">
+                        <div className="logo max-w-[138px] lg:max-w-full flex items-center space-x-4">
                             <a href="#hero" onClick={(e) => handleSmoothScroll(e, "#hero")}>
                                 <img src="logoNavbar.svg" alt="logo" />
                             </a>

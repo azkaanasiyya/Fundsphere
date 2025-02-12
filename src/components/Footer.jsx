@@ -3,11 +3,11 @@ import socmed from "../assets/Socmed.svg";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center relative z-0 bg-neutral-500 text-white pt-52 pb-[56px] px-6">
+    <footer className="flex flex-col items-center relative z-0 bg-neutral-500 text-white pt-52 lg:pt-60 pb-[56px] px-6">
       
-      <div className="max-w-[1200px] w-full flex flex-row justify-between mb-[64px]">
+      <div className="max-w-[1200px] w-full flex flex-col lg:flex-row justify-between mb-[64px]">
         
-        <div className="grid md:grid-cols-3 gap-[120px]">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-[64px] lg:gap-[120px]">
           <div>
             <h2 className="text-base font-medium mb-4">Platform</h2>
             <ul className="space-y-2 text-sm text-neutral-300">
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start order-first lg:order-none mb-[64px] lg:mb-0">
           <img src={logo} alt="logo" className="mb-4" />
           <p className="text-xl font-normal text-neutral-300">Sudirman St., 12B, Malang</p>
           <p className="text-xl font-normal text-neutral-300">+1 215-2231-5523</p>
@@ -48,8 +48,8 @@ export default function Footer() {
 
       <div className="w-full max-w-[1200px] border-t border-neutral-300 mb-[32px]"></div>
 
-      <div className="w-full max-w-[1200px] flex flex-row justify-between items-center">
-        <p className="text-primary-400 text-sm">© Fundsphere Copyright 2024. All Rights Reserved.</p>
+      <div className="w-full max-w-[1200px] flex flex-col gap-[16px] lg:flex-row justify-between items-center">
+        <p className="text-primary-400 text-center text-sm">© Fundsphere Copyright 2024. All Rights Reserved.</p>
         <img src={socmed} alt="socmed" />
       </div>
 

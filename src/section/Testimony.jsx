@@ -1,6 +1,7 @@
 import { useState } from "react";
 import testimony1 from "../assets/testimonial1.svg";
 import testimony2 from "../assets/testimonial2.svg";
+import Headline from "../components/Headline";
 
 const testimonials = [
     {
@@ -38,20 +39,16 @@ export default function Testimony() {
     const [showAll, setShowAll] = useState(false);
 
     return (
-        <div id="testimony" className="testimonial-section pt-[64px] pb-[104px] px-[120px] flex flex-col items-center min-h-screen">
+        <div id="testimony" className="testimonial-section pt-[64px] pb-[64px] px-[20px] lg:pb-[104px] lg:px-[120px] flex flex-col items-center min-h-screen">
             <div className="container max-w-[1200px] flex flex-col items-center gap-[56px]">
                 <div className="headline-wrapper flex flex-col items-center gap-[24px]">
-                    <div className="headline w-[370px] flex flex-col items-center gap-[16px]">
-                        <span className="mb-[16px] inline-block rounded-full bg-additional-purple px-[16px] py-[8px] text-sm font-normal text-primary-500">
-                            TESTIMONY
-                        </span>
-                        <h2 className="text-5xl font-bold tracking-wide">What others are saying about Us</h2>
-                        <p className="text-neutral-300 text-lg text-center font-normal">
-                            Join hundreds of companies embracing Strategic Finance with Fundsphere.
-                        </p>
-                    </div>
+                    <Headline 
+                        tag="TESTIMONY"
+                        title="What others are saying about Us"
+                        description="Join hundreds of companies embracing Strategic Finance with Fundsphere."
+                    />
 
-                    <div className="review flex flex-col items-center gap-[8px]">
+                    <div className="review flex flex-col hidden lg:flex items-center gap-[8px]">
                         <div className="stars flex flex-row items-center">
                              <span className="text-yellow-400 text-lg mr-[12px]">⭐⭐⭐⭐⭐</span>
                             <span className="text-lg font-medium">4.9</span>
@@ -59,17 +56,17 @@ export default function Testimony() {
                         <p className="text-lg font-normal text-neutral-300">REVIEW FROM TRUSTPILOT</p>
                     </div>
                     
-                    <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[32px]">
+                    <div className="grid grid-cols-1 md:grid-cols-2 mx-auto gap-[32px]">
                         {testimonials.slice(0, showAll ? testimonials.length : 2).map((testimonial, index) => (
-                            <div key={index} className="bg-neutral-50 rounded-[24px] py-[32px] px-[40px] flex flex-col gap-[32px]">
-                                <img src={testimonial.image} alt={testimonial.name} className="w-[504px] h-[320px]" />
+                            <div key={index} className="bg-neutral-50 rounded-[24px] p-[16px] lg:py-[32px] lg:px-[40px] flex flex-col gap-[32px]">
+                                <img src={testimonial.image} alt={testimonial.name} className="w-full max-w-full h-[360px] object-cover lg:w-[504px]" />
                                 <div className="flex flex-col justify-between flex-grow gap-[24px]">
-                                    <h3 className="text-[32px] font-bold text-neutral-500">"{testimonial.feedback}"</h3>
+                                    <h3 className="text-xl lg:text-[32px] font-bold text-neutral-500">"{testimonial.feedback}"</h3>
                                     <div className="flex flex-col gap-[4px]">
-                                        <p className="text-xl font-medium text-neutral-500">{testimonial.name}</p>
+                                        <p className="text-base lg:text-xl font-medium text-neutral-500">{testimonial.name}</p>
                                         <div className="flex flex-row gap-[4px]">
-                                            <p className="text-lg font-normal text-neutral-300">{testimonial.role}</p>
-                                            <span className="text-lg font-bold text-neutral-300">{testimonial.bold}</span>
+                                            <p className="text-sm lg:text-lg font-normal text-neutral-300">{testimonial.role}</p>
+                                            <span className="text-sm lg:text-lg font-bold text-neutral-300">{testimonial.bold}</span>
                                         </div>                                        
                                     </div>
                                 </div>
