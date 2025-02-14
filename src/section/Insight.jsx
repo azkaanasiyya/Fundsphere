@@ -18,7 +18,7 @@ export default function Insight() {
     const [showAll, setShowAll] = useState(false); 
 
     return (
-      <div id="insight" className="insight-section py-[32px] px-[20px] lg:py-[120px] lg:px-[119px] flex flex-col items-center bg-neutral-50 min-h-screen" style={{ backgroundImage: `url(${pattern})` }}>
+      <div id="insight" className="insight-section py-[32px] px-[20px] lg:py-[120px] lg:px-[119px] flex flex-col items-center bg-neutral-50" style={{ backgroundImage: `url(${pattern})` }}>
         <div className="container max-w-[1201px] flex flex-col gap-[72px] items-center">
 
             <Headline
@@ -34,7 +34,7 @@ export default function Insight() {
                             <img src={article.image} alt={article.title} className="lg:w-[379px] lg:h-[342px] object-cover rounded-xl" />
                         </div>
 
-                        <div className="bg-white rounded-[12px] py-[8px] px-[24px] md-[16px] lg-[24px] text-left flex flex-col flex-grow justify-between">
+                        <div className="bg-white rounded-[12px] py-[8px] px-[24px] md:p-[16px] lg:p-[24px] text-left flex flex-col flex-grow justify-between">
                             <h3 className="text-neutral-500 text-xl font-medium mb-4">{article.title}</h3>
                             <p className="text-neutral-300 text-base">{article.date}</p>
                         </div>

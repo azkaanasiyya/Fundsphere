@@ -31,7 +31,7 @@ export default function Features() {
 
     return (
         <section id="features" className="features-section py-[40px] px-[20px] lg:py-[80px] lg:px-[120px] bg-white flex flex-col items-center text-center">
-            <div className="container max-w-[335px] md:max-w-[1200px] flex flex-col items-center">
+            <div className="container max-w-[1200px] flex flex-col items-center gap-14">
             
             <Headline
                 tag="FEATURES"
@@ -39,17 +39,17 @@ export default function Features() {
                 description="Growth-accelerating products for startups, ecommerce stores, angel investors, & more."
             />
 
-            <div className="mt-[56px] grid grid-cols-1 md:grid-cols-2 gap-[32px] mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[32px] mx-auto">
                 {features.slice(0, showMore ? features.length : 2).map((features, index) => (
-                    <div key={index} className="p-[24px] lg:py-[32px] lg:px-[40px] bg-neutral-50 rounded-[24px] text-left flex flex-col justify-between">
-                        <div className="flex flex-col gap-[8px]">
+                    <div key={index} className="p-[24px] lg:py-[32px] lg:px-[40px] bg-neutral-50 rounded-[24px] text-left flex flex-col gap-8 justify-between">
+                        <div className="flex flex-col gap-2">
                             <h3 className="text-neutral-500 text-[24px] leading-[28.8px] lg:text-[32px] font-bold">{features.title}</h3>
-                            <p className="text-neutral-300 mt-2 mb-[32px] text-base lg:text-lg">{features.description}</p>
+                            <p className="text-neutral-300 text-base lg:text-lg">{features.description}</p>
                         </div>
                         <img 
                             src={features.image} 
                             alt="feature" 
-                            className="mt-4 rounded-lg w-full max-w-full h-[276px] object-cover lg:w-auto"
+                            className="rounded-lg w-full max-w-full h-[276px] object-cover lg:w-auto"
                         />
 
                     </div>
@@ -58,7 +58,7 @@ export default function Features() {
 
             <button
                 onClick={() => setShowMore(!showMore)}
-                className="mt-[56px] px-[32px] py-[8px] h-[56px] bg-primary-500 font-medium text-white rounded-full text-base hover:bg-primary-400 transition"
+                className="px-[32px] py-[8px] h-[56px] bg-primary-500 font-medium text-white rounded-full text-base hover:bg-primary-400 transition"
             >
                 {showMore ? "See Less" : "See More Features"}
             </button>

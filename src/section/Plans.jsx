@@ -18,7 +18,7 @@ export default function Plans() {
     const [billingCycle, setBillingCycle] = useState("monthly");
 
     return (
-      <div id="plans" className="plans-section py-[80px] px-[120px] bg-white flex flex-col items-center text-center">
+      <div id="plans" className="plans-section py-10 px-5 lg:py-[80px] lg:px-[120px] bg-white flex flex-col items-center text-center">
         <div className="container max-w-[1200px] flex flex-col items-center">
         <div className="flex flex-col items-center">
           < Headline
@@ -37,15 +37,15 @@ export default function Plans() {
         </div>
         
         
-        <div className="grid lg:grid-cols-3 gap-[32px]">
+        <div className="grid md:grid-cols-3 gap-[32px]">
           {pricingPlans[billingCycle].map((plan, index) => (
             <div key={index} className={`py-[32px] px-[24px] lg:px-[40px] rounded-[24px] flex flex-col border border-primary-500 justify-between gap-[40px] ${plan.name === "Pro" ? "bg-neutral-500 text-white" : "bg-neutral-50 text-neutral-500"}`}>
               <div className="pricing-desc">
                 <h3 className="text-[32px] font-bold mb-[8px] text-left">{plan.name}</h3>
-                <p className="text-lg text-left mb-[32px] w-[287px] lg:w-[298.67px] text-neutral-200">{plan.desc}</p>
+                <p className="text-lg text-left mb-[32px] max-w-[298.67px] text-neutral-200">{plan.desc}</p>
                 <ul>
                   {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-center space-x-2 mb-[16px] text-lg">
+                    <li key={i} className="flex items-center space-x-2 mb-[16px] text-lg text-left">
                       <span className="text-blue-600">✔</span>
                       <span>{feature}</span>
                     </li>

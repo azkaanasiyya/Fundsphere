@@ -8,7 +8,7 @@ function Navbar() {
         setActive(!active);
     };
 
-    let menuActive = active ? "left-0" : "-left-full";
+    let menuActive = active ? "left-0" : "-top-full";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -45,7 +45,7 @@ function Navbar() {
                                 <img src="logoNavbar.svg" alt="logo" />
                             </a>
                         </div>
-                        <ul className={`flex gap-[52px] text-base font-medium text-neutral-500 fixed lg:static 2lg:bg-transparent 2lg:w-auto 2lg:h-full 2lg:translate-y-0 2lg:flex-row 2lg:shadow-none 2lg:p-0 2lg:m-0 2lg:transition-none ${menuActive} top-1/2 -translate-y-1/2 flex-col px-8 py-6 rounded shadow-lg shadow-slate-300 bg-primary-300 transition-all`}>
+                        <ul className={`flex gap-[52px] text-base font-medium text-neutral-500 fixed lg:static 2lg:bg-transparent 2lg:w-auto 2lg:h-full 2lg:translate-y-0 2lg:flex-row 2lg:shadow-none 2lg:p-0 2lg:m-0 2lg:transition-none ${menuActive} top-60 -translate-y-1/2 w-full flex-col px-8 py-6 rounded shadow-lg shadow-slate-300 bg-white transition-all`}>
                             <li>
                                 <a href="#features" onClick={(e) => handleSmoothScroll(e, "#features")}>Features</a>
                             </li>
