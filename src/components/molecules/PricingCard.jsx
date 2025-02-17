@@ -4,8 +4,10 @@ import ButtonPricing from "../atoms/ButtonPricing";
 const PricingCard = ({ plan }) => {
   return (
     <div
-      className={`py-[32px] px-[24px] lg:px-[40px] rounded-[24px] flex flex-col border border-primary-500 
-        justify-between gap-[40px] ${plan.name === "Pro" ? "bg-neutral-500 text-white" : "bg-neutral-50 text-neutral-500"}`}
+      className={`py-[32px] px-[24px] lg:px-[40px] rounded-[24px] 
+                  flex flex-col border border-primary-500 
+                  justify-between gap-[40px] 
+                  ${plan.name === "Pro" ? "bg-neutral-500 text-white" : "bg-neutral-50 text-neutral-500"}`}
     >
       <div>
         <h3 className="text-[32px] font-bold mb-[8px] text-left">{plan.name}</h3>
