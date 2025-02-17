@@ -25,7 +25,6 @@ export default function Plans() {
         </div>
 
         <PricingList plans={pricingPlans[billingCycle]} />
-
       </div>
     </div>
   );

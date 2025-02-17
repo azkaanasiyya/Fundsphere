@@ -1,24 +1,25 @@
 // eslint-disable-next-line react/prop-types
 export default function EmailInput({ placeholder, buttonText }) {
-    return (
-      <div className="relative ">
-        <input
-          type="email"
-          placeholder={placeholder}
-          className="w-full rounded-full border border-neutral-100 
-                    px-4 py-[4px] pr-[160px] pl-[32px] h-[56px] lg:h-[64px] 
-                    bg-white placeholder-neutral-300 text-sm lg:text-base 
-                    focus:outline-none"
-        />
-        <button className="absolute right-1 top-1 bottom-1 
-                                flex items-center justify-center 
-                                px-8 py-2 h-[48px] lg:h-[56px] max-w-[153px] 
-                                rounded-full bg-primary-500 text-white 
-                                text-base font-medium hover:bg-primary-400 
-                                transition-all">
-          {buttonText}
-        </button>
-      </div>
-    );
-  }
-  
+  return (
+    <div className="relative ">
+      <input
+        type="email"
+        placeholder={placeholder}
+        className="h-[56px] w-full rounded-full border 
+                    border-neutral-100 bg-white px-4 py-[4px] pl-[32px] pr-[160px] 
+                    text-sm placeholder-neutral-300 focus:outline-none lg:h-[64px] 
+                    lg:text-base"
+      />
+      <button
+        className="absolute bottom-1 right-1 top-1 
+                                flex h-[48px] max-w-[153px] 
+                                items-center justify-center rounded-full bg-primary-500 px-8 
+                                py-2 text-base font-medium 
+                                text-white transition-all hover:bg-primary-400 
+                                lg:h-[56px]"
+      >
+        {buttonText}
+      </button>
+    </div>
+  );
+}
