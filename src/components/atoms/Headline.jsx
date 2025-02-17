@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 export default function Headline({ tag, title, description }) {
   return (
     <div className="headline flex flex-col items-center max-w-[335px] lg:max-w-[479px] text-center gap-4">

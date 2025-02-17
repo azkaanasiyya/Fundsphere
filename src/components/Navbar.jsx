@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useEffect, useState } from "react";
 
 function Navbar() {
@@ -8,7 +10,7 @@ function Navbar() {
         setActive(!active);
     };
 
-    let menuActive = active ? "left-0" : "-left-full";
+    const menuActive = active ? "left-0" : "-left-full";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -24,7 +26,7 @@ function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    let scrollActive = scroll ? "bg-white shadow" : "py-0";
+    const scrollActive = scroll ? "bg-white shadow" : "py-0";
 
     const handleSmoothScroll = (e, targetId) => {
         e.preventDefault(); 
