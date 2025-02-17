@@ -1,10 +1,7 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
 import TestimonialCard from "../molecules/TestimonialCard";
-import Button from "../atoms/Button";
 
-const TestimonialList = ({ testimonials }) => {
-  const [showAll, setShowAll] = useState(false);
+const TestimonialList = ({ testimonials, showAll }) => {
 
   return (
     <div className="flex flex-col items-center gap-[40px]">
@@ -13,10 +10,6 @@ const TestimonialList = ({ testimonials }) => {
           <TestimonialCard key={index} {...testimonial} />
         ))}
       </div>
-
-      <Button onClick={() => setShowAll(!showAll)}>
-        {showAll ? "See Less Article" : "Read More Article"}
-      </Button>
     </div>
   );
 };

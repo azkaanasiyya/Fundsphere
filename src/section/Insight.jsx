@@ -2,8 +2,11 @@ import pattern from '../assets/patternInsight.svg';
 import Headline from '../components/atoms/Headline';
 import articles from '../data/articles';
 import ArticleList from '../components/organisms/ArticleList';
+import { useState } from "react";
+import Button from '../components/atoms/Button';
 
 export default function Insight() {
+    const [showAll, setShowAll] = useState(false);
 
   return (
     <div
@@ -14,7 +17,9 @@ export default function Insight() {
       <div className="container flex max-w-[1201px] flex-col items-center gap-[72px]">
         <Headline tag="INSIGHT" title="Magazine" description="Find growth insight in our blog." />
 
-        <ArticleList articles={articles} />
+        <ArticleList articles={articles} showAll={showAll}/>
+
+        <Button onClick={() => setShowAll(!showAll)}>{showAll ? 'See Less' : 'See More Articles'}</Button>
       </div>
     </div>
   );

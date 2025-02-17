@@ -2,8 +2,11 @@ import Headline from '../components/atoms/Headline';
 import testimonials from '../data/testimonials';
 import TestimonialList from '../components/organisms/TestimonialList';
 import StarsRating from '../components/atoms/StarsRating';
+import { useState } from "react";
+import Button from '../components/atoms/Button';
 
 export default function Testimony() {
+  const [showAll, setShowAll] = useState(false);
 
   return (
     <div
@@ -21,8 +24,9 @@ export default function Testimony() {
             <StarsRating rating="4.9" source="REVIEW FROM TRUSTPILOT" /> 
         </div>
         
+        <TestimonialList testimonials={testimonials} showAll={showAll} />
 
-        <TestimonialList testimonials={testimonials} />
+        <Button onClick={() => setShowAll(!showAll)}>{showAll ? 'See Less' : 'Read More Article'}</Button>
 
       </div>
     </div>
