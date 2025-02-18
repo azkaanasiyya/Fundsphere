@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import uber from '../assets/uber.svg';
 import amazon from '../assets/amazon.svg';
 import ebay from '../assets/ebay.svg';

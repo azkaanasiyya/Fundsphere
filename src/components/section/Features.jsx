@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Headline from '../components/atoms/Headline';
+import Headline from '../components/atoms/headline';
 import Button from '../components/atoms/Button';
 import features from '../data/features';
-import FeatureList from '../components/organisms/FeatureList';
+import FeatureList from '../components/organisms/featureList';
 
 export default function Features() {
   const [showMore, setShowMore] = useState(false);

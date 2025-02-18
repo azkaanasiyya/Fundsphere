@@ -1,8 +1,9 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useEffect, useState } from 'react';
 
-function Navbar() {
+function navbar() {
   const [active, setActive] = useState(false);
   const [scroll, setScroll] = useState(false);
 
@@ -26,7 +27,7 @@ function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollActive = scroll ? 'bg-white shadow' : 'py-0';
+  const scrollActive = scroll ? 'bg-white' : 'py-0';
 
   const handleSmoothScroll = (e, targetId) => {
     e.preventDefault();
@@ -38,7 +39,7 @@ function Navbar() {
   };
 
   return (
-    <div className={`navbar sticky top-0 z-[9999] w-full transition-all ${scrollActive}`}>
+    <div className={`navbar sticky top-0 z-[9999] w-full bg-white transition-all ${scrollActive}`}>
       <div className="container mx-auto px-5 py-6 lg:px-8 lg:py-8">
         <div className="navbar-wrapper flex items-center justify-between">
           <div className="navbar-block flex items-center justify-between gap-[7.5rem]">
@@ -48,7 +49,7 @@ function Navbar() {
               </a>
             </div>
             <ul
-              className={`fixed flex gap-[52px] text-base font-medium text-neutral-500 lg:static 2lg:m-0 2lg:h-full 2lg:w-auto 2lg:translate-y-0 2lg:flex-row 2lg:bg-transparent 2lg:p-0 2lg:shadow-none 2lg:transition-none ${menuActive} top-60 w-full -translate-y-1/2 flex-col rounded bg-primary-300 px-8 py-6 shadow-lg shadow-slate-300 transition-all`}
+              className={`fixed flex gap-[52px] text-base font-medium text-neutral-500 lg:static 2lg:m-0 2lg:h-full 2lg:w-auto 2lg:translate-y-0 2lg:flex-row 2lg:bg-transparent 2lg:p-0 2lg:shadow-none 2lg:transition-none ${menuActive} top-60 w-full -translate-y-1/2 flex-col rounded bg-primary-300 px-8 py-6  transition-all`}
             >
               <li>
                 <a href="#features" onClick={(e) => handleSmoothScroll(e, '#features')}>
@@ -89,4 +90,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default navbar;

@@ -1,14 +1,15 @@
+/* eslint-disable import/no-unresolved */
 import card from '../assets/cardImage.svg';
 import cost from '../assets/costImage.svg';
 import insert from '../assets/insertImage.svg';
 import rectangle from '../assets/rectangle.svg';
 import left from '../assets/left.svg';
 import right from '../assets/right.svg';
-import EmailInput from '../components/atoms/EmailInput';
+import EmailInput from '../components/atoms/emailInput';
 
 function Hero() {
   return (
-    <div id="hero" className="container mx-auto max-w-[1200px] px-5 pb-14 pt-10 lg:px-0 lg:pb-28 lg:pt-16">
+    <div id="hero" className="container mx-auto max-w-[1200px] bg-white px-5 pb-14 pt-10 lg:px-0 lg:pb-28 lg:pt-16">
       <div className="grid grid-cols-1 items-center justify-between md:grid-cols-[53%_43%]">
         <div className="relative hidden w-full md:block">
           <div className="absolute inset-y-0 right-0 flex items-center">

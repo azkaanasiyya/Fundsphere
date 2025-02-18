@@ -1,7 +1,7 @@
 import logo from '../assets/logo.svg';
 import socmed from '../assets/Socmed.svg';
 
-export default function Footer() {
+export default function footer() {
   return (
     <footer className="relative z-0 flex flex-col items-center bg-neutral-500 px-6 pb-[56px] pt-52 text-white lg:pt-60">
       <div className="mb-[64px] flex w-full max-w-[1200px] flex-col justify-between lg:flex-row">

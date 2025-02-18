@@ -1,5 +1,5 @@
 import pattern from '../assets/patternCTA.svg';
-import EmailInput from './atoms/EmailInput';
+import EmailInput from './atoms/emailInput';
 
 export default function CTA() {
   return (

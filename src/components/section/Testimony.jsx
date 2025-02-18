@@ -1,9 +1,9 @@
-import Headline from '../components/atoms/Headline';
-import testimonials from '../data/testimonials';
-import TestimonialList from '../components/organisms/TestimonialList';
-import StarsRating from '../components/atoms/StarsRating';
+import Headline from '../atoms/headline';
+import testimonials from '../../data/testimonials';
+import TestimonialList from '../organisms/testimonialList';
+import StarsRating from '../atoms/starsRating';
 import { useState } from 'react';
-import Button from '../components/atoms/Button';
+import Button from '../atoms/Button';
 
 export default function Testimony() {
   const [showAll, setShowAll] = useState(false);
@@ -11,7 +11,7 @@ export default function Testimony() {
   return (
     <div
       id="testimony"
-      className="testimonial-section flex flex-col items-center px-[20px] pb-[64px] pt-[64px] lg:px-[120px] lg:pb-[104px]"
+      className="testimonial-section flex flex-col items-center bg-white px-[20px] pb-[64px] pt-[64px] lg:px-[120px] lg:pb-[104px]"
     >
       <div className="container flex max-w-[1200px] flex-col items-center gap-14">
         <div className="flex flex-col items-center gap-6">

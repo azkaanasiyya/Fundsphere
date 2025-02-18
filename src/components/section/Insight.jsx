@@ -1,7 +1,8 @@
+/* eslint-disable import/no-unresolved */
 import pattern from '../assets/patternInsight.svg';
-import Headline from '../components/atoms/Headline';
+import Headline from '../components/atoms/headline';
 import articles from '../data/articles';
-import ArticleList from '../components/organisms/ArticleList';
+import ArticleList from '../components/organisms/articleList';
 import { useState } from 'react';
 import Button from '../components/atoms/Button';
 

@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
-const TestimonialCard = ({ image, name, role, bold, feedback }) => {
+const testimonialCard = ({ image, name, role, bold, feedback }) => {
   return (
     <div className="flex flex-col gap-[32px] rounded-[24px] bg-neutral-50 p-[16px] lg:px-[40px] lg:py-[32px]">
       <img src={image} alt={name} className="h-[360px] w-full max-w-full object-cover lg:w-[504px]" />
@@ -18,4 +18,4 @@ const TestimonialCard = ({ image, name, role, bold, feedback }) => {
   );
 };
 
-export default TestimonialCard;
+export default testimonialCard;

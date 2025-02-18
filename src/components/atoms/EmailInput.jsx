@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-export default function EmailInput({ placeholder, buttonText }) {
+export default function emailInput({ placeholder, buttonText }) {
   return (
     <div className="relative ">
       <input

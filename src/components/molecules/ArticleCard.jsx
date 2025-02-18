@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const ArticleCard = ({ image, title, date }) => {
+const articleCard = ({ image, title, date }) => {
   return (
     <div className="flex w-full flex-col items-center gap-4">
       <div className="w-full overflow-hidden rounded-2xl bg-white shadow-lg">
@@ -18,4 +18,4 @@ const ArticleCard = ({ image, title, date }) => {
   );
 };
 
-export default ArticleCard;
+export default articleCard;

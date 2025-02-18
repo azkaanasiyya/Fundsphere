@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import TestimonialCard from '../molecules/TestimonialCard';
+import TestimonialCard from '../molecules/testimonialCard';
 
-const TestimonialList = ({ testimonials, showAll }) => {
+const testimonialList = ({ testimonials, showAll }) => {
   return (
     <div className="flex flex-col items-center gap-[40px]">
       <div className="mx-auto grid grid-cols-1 gap-[32px] md:grid-cols-2">
@@ -13,4 +13,4 @@ const TestimonialList = ({ testimonials, showAll }) => {
   );
 };
 
-export default TestimonialList;
+export default testimonialList;

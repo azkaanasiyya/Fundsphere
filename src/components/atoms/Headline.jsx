@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-export default function Headline({ tag, title, description }) {
+export default function headline({ tag, title, description }) {
   return (
     <div className="headline flex max-w-[335px] flex-col items-center gap-4 text-center lg:max-w-[479px]">
       {tag && (
