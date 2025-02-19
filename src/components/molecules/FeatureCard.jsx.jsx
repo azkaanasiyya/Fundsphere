@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const featureCard = ({ title, description, image }) => {
+const FeatureCard = ({ title, description, image }) => {
   return (
     <div
       className="flex flex-col justify-between 
@@ -15,4 +15,4 @@ const featureCard = ({ title, description, image }) => {
   );
 };
 
-export default featureCard;
+export default FeatureCard;

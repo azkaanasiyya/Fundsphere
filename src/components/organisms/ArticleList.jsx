@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import ArticleCard from '../molecules/articleCard';
+import ArticleCard from '../molecules/ArticleCard';
 
-const articleList = ({ articles, showAll }) => {
+const ArticleList = ({ articles, showAll }) => {
   return (
     <div className="flex flex-col items-center gap-[72px]">
       <div className="grid gap-[32px] md:grid-cols-3 lg:grid-cols-3">
@@ -13,4 +13,4 @@ const articleList = ({ articles, showAll }) => {
   );
 };
 
-export default articleList;
+export default ArticleList;

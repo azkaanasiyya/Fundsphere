@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import Button from '../atoms/button';
+import Button from '../atoms/Button';
 
-const pricingCard = ({ plan }) => {
+const PricingCard = ({ plan }) => {
   return (
     <div
       className={`flex flex-col justify-between gap-[40px] 
@@ -31,4 +31,4 @@ const pricingCard = ({ plan }) => {
   );
 };
 
-export default pricingCard;
+export default PricingCard;

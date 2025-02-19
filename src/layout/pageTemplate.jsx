@@ -1,9 +1,9 @@
-import Navbar from '../components/templates/navbar';
+import Navbar from '../components/templates/Navbar';
 import CTA from '../components/templates/CTA';
-import Footer from '../components/templates/footer';
+import Footer from '../components/templates/Footer';
 
 // eslint-disable-next-line react/prop-types
-const pageTemplate = ({ children }) => {
+const PageTemplate = ({ children }) => {
   return (
     <>
       <Navbar />
@@ -14,4 +14,4 @@ const pageTemplate = ({ children }) => {
   );
 };
 
-export default pageTemplate;
+export default PageTemplate;

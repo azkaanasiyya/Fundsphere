@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import PricingCard from '../molecules/pricingCard';
+import PricingCard from '../molecules/PricingCard';
 
-const pricingList = ({ plans }) => {
+const PricingList = ({ plans }) => {
   return (
     <div className="grid gap-[32px] md:grid-cols-3">
       {plans.map((plan, index) => (
@@ -11,4 +11,4 @@ const pricingList = ({ plans }) => {
   );
 };
 
-export default pricingList;
+export default PricingList;

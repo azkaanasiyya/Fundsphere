@@ -1,5 +1,5 @@
-import Input from "../atoms/input";
-import Button from "../atoms/button"
+import Input from "../atoms/Input";
+import Button from "../atoms/Button"
 
 // eslint-disable-next-line react/prop-types
 export default function EmailInput({ placeholder, buttonText }) {

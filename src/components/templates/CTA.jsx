@@ -1,5 +1,5 @@
 import pattern from '../../assets/patternCTA.svg';
-import EmailInput from '../molecules/emailInput';
+import EmailInput from '../molecules/EmailInput';
 
 export default function CTA() {
   return (

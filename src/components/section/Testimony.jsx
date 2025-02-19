@@ -1,7 +1,7 @@
 import Headline from '../atoms/Headline';
-import testimonials from '../../data/testimonials';
-import TestimonialList from '../organisms/testimonialList';
-import StarsRating from '../atoms/starsRating';
+import testimonials from '../../data/TestimonialData';
+import TestimonialList from '../organisms/TestimonialList';
+import StarsRating from '../atoms/StarsRating';
 import { useState } from 'react';
 import Button from '../atoms/Button';
 

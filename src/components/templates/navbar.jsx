@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useEffect, useState } from 'react';
 
-function navbar() {
+function Navbar() {
   const [active, setActive] = useState(false);
   const [scroll, setScroll] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -111,4 +111,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;

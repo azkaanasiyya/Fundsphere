@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/prop-types */
 
-const switchToggle = ({ billingCycle, setBillingCycle }) => {
+const SwitchToggle = ({ billingCycle, setBillingCycle }) => {
   return (
     <div className="mb-[40px] mt-[40px] flex items-center space-x-2">
       <span className={billingCycle === 'monthly' ? 'text-base text-primary-500' : 'text-neutral-200'}>Monthly</span>
@@ -20,4 +20,4 @@ const switchToggle = ({ billingCycle, setBillingCycle }) => {
   );
 };
 
-export default switchToggle;
+export default SwitchToggle;
