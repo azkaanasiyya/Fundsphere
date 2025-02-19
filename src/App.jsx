@@ -1,9 +1,9 @@
 import Hero from './components/section/Hero';
-import Ads from './components/section/ads';
-import Features from './components/section/features';
-import Plans from './components/section/plans';
-import Insight from './components/section/insight';
-import Testimony from './components/section/testimony';
+import Ads from './components/section/Ads';
+import Features from './components/section/Features';
+import Plans from './components/section/Plans';
+import Insight from './components/section/Insight';
+import Testimony from './components/section/Testimony';
 import PageTemplate from './layout/pageTemplate';
 
 function App() {
