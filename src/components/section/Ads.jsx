@@ -1,9 +1,9 @@
 /* eslint-disable import/no-unresolved */
-import uber from '../assets/uber.svg';
-import amazon from '../assets/amazon.svg';
-import ebay from '../assets/ebay.svg';
-import walmart from '../assets/walmart.svg';
-import pattern from '../assets/pattern.svg';
+import uber from '../../assets/uber.svg';
+import amazon from '../../assets/amazon.svg';
+import ebay from '../../assets/ebay.svg';
+import walmart from '../../assets/walmart.svg';
+import pattern from '../../assets/pattern.svg';
 
 function Ads() {
   return (

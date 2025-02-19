@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import ButtonPricing from '../atoms/buttonPricing';
+import Button from '../atoms/button';
 
 const pricingCard = ({ plan }) => {
   return (
@@ -25,7 +25,7 @@ const pricingCard = ({ plan }) => {
         <p className={`mb-[24px] text-6xl font-bold ${plan.name === 'Pro' ? 'text-white' : 'text-primary-500'}`}>
           ${plan.price} <span className="text-base font-normal text-neutral-200">/ month</span>
         </p>
-        <ButtonPricing variant={plan.name === 'Pro' ? 'primary' : 'default'}>Book Demo</ButtonPricing>
+        <Button variant={plan.name === 'Pro' ? 'pricing' : 'default'}>Book Demo</Button>
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 /* eslint-disable import/no-unresolved */
-import card from '../assets/cardImage.svg';
-import cost from '../assets/costImage.svg';
-import insert from '../assets/insertImage.svg';
-import rectangle from '../assets/rectangle.svg';
-import left from '../assets/left.svg';
-import right from '../assets/right.svg';
-import EmailInput from '../components/atoms/emailInput';
+import card from '../../assets/cardImage.svg';
+import cost from '../../assets/costImage.svg';
+import insert from '../../assets/insertImage.svg';
+import rectangle from '../../assets/rectangle.svg';
+import left from '../../assets/left.svg';
+import right from '../../assets/right.svg';
+import EmailInput from '../molecules/emailInput';
 
 function Hero() {
   return (

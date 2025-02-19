@@ -2,9 +2,9 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useState } from 'react';
-import Headline from '../atoms/Headline';
+import Headline from '../atoms/headline';
 import pricingPlans from '../../data/pricingPlans';
-import SwitchToggle from '../molecules/SwitchToggle';
+import SwitchToggle from '../atoms/switchToggle';
 import PricingList from '../organisms/PricingList';
 
 export default function Plans() {

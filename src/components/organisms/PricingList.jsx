@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import PricingCard from '../Molecules/pricingCard';
+import PricingCard from '../molecules/pricingCard';
 
 const pricingList = ({ plans }) => {
   return (

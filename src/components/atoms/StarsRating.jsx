@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const starsRating = ({ rating, source }) => {
+const StarsRating = ({ rating, source }) => {
   return (
     <div className="flex flex-col items-center gap-[8px]">
       <div className="flex flex-row items-center">
@@ -11,4 +11,4 @@ const starsRating = ({ rating, source }) => {
   );
 };
 
-export default starsRating;
+export default StarsRating;

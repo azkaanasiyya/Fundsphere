@@ -3,7 +3,7 @@ import testimonials from '../../data/testimonials';
 import TestimonialList from '../organisms/testimonialList';
 import StarsRating from '../atoms/starsRating';
 import { useState } from 'react';
-import Button from '../atoms/Button';
+import Button from '../atoms/button';
 
 export default function Testimony() {
   const [showAll, setShowAll] = useState(false);

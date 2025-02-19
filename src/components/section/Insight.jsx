@@ -1,10 +1,10 @@
 /* eslint-disable import/no-unresolved */
-import pattern from '../assets/patternInsight.svg';
-import Headline from '../components/atoms/headline';
-import articles from '../data/articles';
-import ArticleList from '../components/organisms/articleList';
+import pattern from '../../assets/patternInsight.svg';
+import Headline from '../atoms/headline';
+import articles from '../../data/articles';
+import ArticleList from '../organisms/articleList';
 import { useState } from 'react';
-import Button from '../components/atoms/Button';
+import Button from '../atoms/button';
 
 export default function Insight() {
   const [showAll, setShowAll] = useState(false);
