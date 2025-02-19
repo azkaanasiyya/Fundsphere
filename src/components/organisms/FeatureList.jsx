@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import FeatureCard from '../molecules/FeatureCard.jsx.jsx';
+import FeatureCard from '../molecules/FeatureCard.jsx';
 
 const FeatureList = ({ features, showMore }) => {
   return (
