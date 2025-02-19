@@ -1,9 +1,9 @@
-import Headline from '../atoms/headline';
+import Headline from '../atoms/Headline';
 import testimonials from '../../data/testimonials';
 import TestimonialList from '../organisms/testimonialList';
 import StarsRating from '../atoms/starsRating';
 import { useState } from 'react';
-import Button from '../atoms/button';
+import Button from '../atoms/Button';
 
 export default function Testimony() {
   const [showAll, setShowAll] = useState(false);

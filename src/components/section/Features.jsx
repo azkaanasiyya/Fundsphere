@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Headline from '../atoms/headline';
-import Button from '../atoms/button';
+import Headline from '../atoms/Headline';
+import Button from '../atoms/Button';
 import features from '../../data/features';
 import FeatureList from '../organisms/featureList';
 

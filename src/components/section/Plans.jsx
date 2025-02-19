@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useState } from 'react';
-import Headline from '../atoms/headline';
+import Headline from '../atoms/Headline';
 import pricingPlans from '../../data/pricingPlans';
 import SwitchToggle from '../atoms/switchToggle';
 import PricingList from '../organisms/PricingList';
