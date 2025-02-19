@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export default function Input({ type = "text", placeholder, className }) {
+export default function Input({ type = 'text', placeholder, className }) {
   return (
     <input
       type={type}

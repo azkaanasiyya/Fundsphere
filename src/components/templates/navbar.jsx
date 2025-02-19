@@ -41,11 +41,11 @@ function Navbar() {
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
-  };  
+  };
 
   return (
     <div className={`navbar sticky top-0 z-[9999] w-full bg-white transition-all ${scrollActive}`}>
-      <div className="container max-w-[1280px] mx-auto px-5 py-6 lg:px-8 lg:py-8">
+      <div className="container mx-auto max-w-[1280px] px-5 py-6 lg:px-8 lg:py-8">
         <div className="navbar-wrapper flex items-center justify-between">
           <div className="navbar-block flex items-center justify-between gap-[7.5rem]">
             <div className="logo flex max-w-[138px] items-center space-x-4 lg:max-w-full">
@@ -57,38 +57,49 @@ function Navbar() {
               className={`fixed flex gap-[52px] text-base font-medium text-neutral-500 lg:static 2lg:m-0 2lg:h-full 2lg:w-auto 2lg:translate-y-0 2lg:flex-row 2lg:bg-transparent 2lg:p-0 2lg:shadow-none 2lg:transition-none ${menuActive} top-60 w-full -translate-y-1/2 flex-col rounded bg-primary-300 px-8 py-6  transition-all`}
             >
               <li className="relative">
-                <button 
-                  onClick={toggleDropdown} 
-                  className="flex items-center gap-1 hover:text-primary-500 transition"
-                >
+                <button onClick={toggleDropdown} className="flex items-center gap-1 transition hover:text-primary-500">
                   Features <i className="ri-arrow-down-s-line"></i>
                 </button>
                 {isDropdownOpen && (
                   <ul className="absolute left-0 mt-2 w-48 rounded-lg bg-white shadow-md">
                     <li>
-                      <a href="#feature1" className="block px-4 py-2 hover:bg-gray-100">Feature 1</a>
+                      <a href="#feature1" className="block px-4 py-2 hover:bg-gray-100">
+                        Feature 1
+                      </a>
                     </li>
                     <li>
-                      <a href="#feature2" className="block px-4 py-2 hover:bg-gray-100">Feature 2</a>
+                      <a href="#feature2" className="block px-4 py-2 hover:bg-gray-100">
+                        Feature 2
+                      </a>
                     </li>
                     <li>
-                      <a href="#feature3" className="block px-4 py-2 hover:bg-gray-100">Feature 3</a>
+                      <a href="#feature3" className="block px-4 py-2 hover:bg-gray-100">
+                        Feature 3
+                      </a>
                     </li>
                   </ul>
                 )}
               </li>
               <li>
-                <a href="#plans" className='hover:text-primary-500' onClick={(e) => handleSmoothScroll(e, '#plans')}>
+                <a href="#plans" className="hover:text-primary-500" onClick={(e) => handleSmoothScroll(e, '#plans')}>
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#testimony" className='hover:text-primary-500' onClick={(e) => handleSmoothScroll(e, '#testimony')}>
+                <a
+                  href="#testimony"
+                  className="hover:text-primary-500"
+                  onClick={(e) => handleSmoothScroll(e, '#testimony')}
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#insight" className='hover:text-primary-500' onClick={(e) => handleSmoothScroll(e, '#insight')}>
+                <a
+                  href="#insight"
+                  className="hover:text-primary-500"
+                  onClick={(e) => handleSmoothScroll(e, '#insight')}
+                >
                   Blog
                 </a>
               </li>
