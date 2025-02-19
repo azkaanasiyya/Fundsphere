@@ -1,5 +1,5 @@
-import logo from '../assets/logo.svg';
-import socmed from '../assets/Socmed.svg';
+import logo from '../../assets/logo.svg';
+import socmed from '../../assets/Socmed.svg';
 
 export default function footer() {
   return (
