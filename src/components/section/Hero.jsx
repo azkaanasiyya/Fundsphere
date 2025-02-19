@@ -9,7 +9,7 @@ import EmailInput from '../molecules/emailInput';
 
 function Hero() {
   return (
-    <div id="hero" className="container mx-auto max-w-[1200px] bg-white px-5 pb-14 pt-10 lg:px-0 lg:pb-28 lg:pt-16">
+    <div id="hero" className="container mx-auto max-w-[1200px] px-5 pb-14 pt-10 lg:px-0 lg:pb-28 lg:pt-16">
       <div className="grid grid-cols-1 items-center justify-between md:grid-cols-[53%_43%]">
         <div className="relative hidden w-full md:block">
           <div className="absolute inset-y-0 right-0 flex items-center">
