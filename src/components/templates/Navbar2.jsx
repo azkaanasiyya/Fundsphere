@@ -54,7 +54,7 @@ function Navbar() {
               </a>
             </div>
             <ul
-              className={`fixed flex gap-[52px] text-base font-medium text-neutral-500 lg:static 2lg:m-0 2lg:h-full 2lg:w-auto 2lg:translate-y-0 2lg:flex-row 2lg:bg-transparent 2lg:p-0 2lg:shadow-none 2lg:transition-none ${menuActive} top-60 w-full -translate-y-1/2 flex-col rounded bg-primary-300 px-8 py-6  transition-all`}
+              className={`fixed flex gap-[48px] text-base font-medium text-neutral-500 lg:static 2lg:m-0 2lg:h-full 2lg:w-auto 2lg:translate-y-0 2lg:flex-row 2lg:bg-transparent 2lg:p-0 2lg:shadow-none 2lg:transition-none ${menuActive} top-60 w-full -translate-y-1/2 flex-col rounded bg-primary-300 px-8 py-6  transition-all`}
             >
               <li className="relative">
                 <button onClick={toggleDropdown} className="flex items-center gap-1 transition hover:text-primary-500">
