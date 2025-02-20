@@ -5,7 +5,7 @@ import insert from '../../assets/insertImage.svg';
 import rectangle from '../../assets/rectangle.svg';
 import left from '../../assets/left.svg';
 import right from '../../assets/right.svg';
-import EmailInput from '../molecules/EmailInput';
+import EmailInput from '../molecules/EmailInput2';
 
 function Hero() {
   return (

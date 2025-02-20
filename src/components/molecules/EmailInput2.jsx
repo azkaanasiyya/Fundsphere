@@ -1,4 +1,4 @@
-import Input from '../atoms/Input';
+import Input from '../atoms/Input2';
 import Button from '../atoms/Button';
 
 // eslint-disable-next-line react/prop-types

@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import Headline from '../atoms/Headline';
 import pricingPlans from '../../data/PricingPlanData';
-import SwitchToggle from '../atoms/SwitchToggle';
+import SwitchToggle from '../atoms/SwitchToggle2';
 import PricingList from '../organisms/PricingList';
 
 export default function Plans() {
