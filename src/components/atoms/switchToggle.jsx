@@ -4,7 +4,7 @@
 
 const SwitchToggle = ({ billingCycle, setBillingCycle }) => {
   return (
-    <div className="mb-[40px] mt-[40px] flex items-center space-x-2">
+    <div className="mb-[41px] mt-[40px] flex items-center space-x-2">
       <span className={billingCycle === 'monthly' ? 'text-base text-primary-500' : 'text-neutral-200'}>Monthly</span>
       <div
         className="relative h-8 w-16 cursor-pointer rounded-full bg-gray-300"

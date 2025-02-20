@@ -45,7 +45,7 @@ function Navbar() {
 
   return (
     <div className={`navbar sticky top-0 z-[9999] w-full bg-white transition-all ${scrollActive}`}>
-      <div className="container mx-auto max-w-[1280px] px-5 py-6 lg:px-8 lg:py-8">
+      <div className="container mx-auto max-w-[1281px] px-5 py-6 lg:px-8 lg:py-8">
         <div className="navbar-wrapper flex items-center justify-between">
           <div className="navbar-block flex items-center justify-between gap-[7.5rem]">
             <div className="logo flex max-w-[138px] items-center space-x-4 lg:max-w-full">
