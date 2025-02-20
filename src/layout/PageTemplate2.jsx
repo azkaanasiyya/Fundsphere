@@ -3,11 +3,11 @@ import CTA from '../components/templates/CTA';
 import Footer from '../components/templates/Footer2';
 
 // eslint-disable-next-line react/prop-types
-const PageTemplate = ({ child }) => {
+const PageTemplate = ({ children }) => {
   return (
     <>
       <Navbar />
-      {child}
+      {children}
       <CTA />
       <Footer />
     </>
