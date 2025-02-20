@@ -9,8 +9,8 @@ import EmailInput from '../molecules/EmailInput2';
 
 function Hero() {
   return (
-    <div id="hero" className="bg-white">
-      <div className="container mx-auto max-w-[1200px] bg-white px-5 pb-14 pt-10 lg:px-0 lg:pb-28 lg:pt-16">
+    <div id="hero" className="relative bg-white">
+      <div className="container relative mx-auto max-w-[1200px] bg-white px-5 pb-14 pt-10 lg:px-0 lg:pb-28 lg:pt-16">
         <div className="grid grid-cols-1 items-center justify-between md:grid-cols-[53%_43%]">
           <div className="relative hidden w-full md:block">
             <div className="absolute inset-y-0 right-0 flex items-center">
@@ -75,9 +75,9 @@ function Hero() {
         <img
           src={right}
           alt="Right"
-          className="absolute -bottom-32 right-0 hidden w-[250px] lg:block lg:w-[355px]"
+          className="absolute bottom-0 right-0 hidden w-[250px] lg:block lg:w-[355px]"
         />
-        <img src={left} alt="Left" className="absolute -bottom-32 left-0 hidden w-[250px] lg:block lg:w-96" />
+        <img src={left} alt="Left" className="absolute bottom-0 left-0 hidden w-[250px] lg:block lg:w-96" />
       </div>
     </div>
   );
