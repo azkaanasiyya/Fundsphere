@@ -75,9 +75,9 @@ function Hero() {
         <img
           src={right}
           alt="Right"
-          className="absolute bottom-0 right-0 hidden w-[250px] lg:block lg:w-[355px]"
+          className="absolute bottom-0 right-0 hidden w-[250px] md:block lg:w-[355px]"
         />
-        <img src={left} alt="Left" className="absolute bottom-0 left-0 hidden w-[250px] lg:block lg:w-96" />
+        <img src={left} alt="Left" className="absolute bottom-0 left-0 hidden w-[250px] md:block lg:w-96" />
       </div>
     </div>
   );
