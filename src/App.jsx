@@ -5,9 +5,12 @@ import Plans from './components/section/Plans';
 import Insight from './components/section/Insight';
 import Testimony from './components/section/Testimony';
 import PageTemplate from './layout/PageTemplate2';
+import TopBanner from './components/section/Banner';
 
 function App() {
   return (
+    <>
+    <TopBanner/>
     <PageTemplate>
       <Hero />
       <Ads />
@@ -16,6 +19,7 @@ function App() {
       <Insight />
       <Testimony />
     </PageTemplate>
+    </>
   );
 }
 
