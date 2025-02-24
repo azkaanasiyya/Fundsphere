@@ -12,15 +12,14 @@ export default function CTA() {
         <h1 className="text-[32px] font-bold tracking-wide text-white lg:text-5xl lg:leading-[57.6px]">
           Get started today for better future finance
         </h1>
-        <div className='flex flex-col gap-8 max-w-[476px]'>
-            <p className="text-base text-neutral-50 lg:text-[lg]">
+        <div className="flex max-w-[412px] lg:w-[412px] flex-col gap-8">
+          <p className="text-base text-neutral-50 lg:text-[lg]">
             Fundsphere is a compass for business leaders, scale with checking and savings accounts, custom tools, and
             access to our investor network.
           </p>
 
           <EmailInput placeholder="Your work email" buttonText="Get Started"></EmailInput>
         </div>
-        
       </div>
     </section>
   );
